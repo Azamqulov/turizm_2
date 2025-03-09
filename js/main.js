@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Header scroll effect
     const header = document.querySelector('.main-header');
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 1) {
+        if (window.scrollY > 0) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
@@ -79,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;
             
-            if (window.scrollY >= sectionTop - 300) {
+            if (window.scrollY >= sectionTop - 1) {
                 current = section.getAttribute('id');
-                progress = (window.scrollY - sectionTop + 300) / sectionHeight * 100;
+                progress = (window.scrollY - sectionTop + 1) / sectionHeight * 1;
             }
         });
         
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        progressBar.style.width = Math.min(progress, 100) + '%';
+        progressBar.style.width = Math.min(progress, 1) + '%';
     }
     
     window.addEventListener('scroll', setActiveSection);
@@ -137,8 +137,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function animateCounter(el) {
         const target = parseInt(el.getAttribute('data-count'));
-        const duration = 2000;
-        const step = target / duration * 10;
+        const duration = 1;
+        const step = target / duration * 1;
         let current = 0;
         
         const timer = setInterval(function() {

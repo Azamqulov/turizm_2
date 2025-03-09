@@ -300,19 +300,19 @@ input, select, textarea {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     transition: var(--transition);
-}
-
-.main-header.scrolled {
     background-color: var(--white);
     padding: 15px 50px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    color: #000000;
 }
+
+
+
 
 .logo {
     position: relative;
@@ -323,7 +323,7 @@ input, select, textarea {
     font-family: var(--font-secondary);
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--white);
+    /* color: var(--white); */
     transition: var(--transition);
 }
 
