@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkiye Macerası | Benzersiz Deneyimler</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+    
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-icon">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+            <p>Bu web sitesi, deneyiminizi geliştirmek için çerezleri kullanmaktadır.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn-accept">Kabul Et</button>
+                <a href="cookie-policy.html" class="cookie-link">Detaylar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <div class="nav-indicator">
+            <span class="current-section">Ana Sayfa</span>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <ul class="nav-dots">
+            <li class="active" data-section="home"><span class="dot-label">Ana Sayfa</span></li>
+            <li data-section="discover"><span class="dot-label">Keşfet</span></li>
+            <li data-section="experiences"><span class="dot-label">Deneyimler</span></li>
+            <li data-section="destinations"><span class="dot-label">Destinasyonlar</span></li>
+            <li data-section="gallery"><span class="dot-label">Galeri</span></li>
+            <li data-section="contact"><span class="dot-label">İletişim</span></li>
+        </ul>
+        <div class="nav-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-text">Türkiye<span class="accent">Macerası</span></span>
+            </a>
+        </div>
+        <div class="header-controls">
+            <div class="language-selector">
+                <span class="current-lang">TR</span>
+                <div class="lang-options">
+                    <a href="#" class="active">TR</a>
+                    <a href="#">EN</a>
+                    <a href="#">DE</a>
+                    <a href="#">RU</a>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-text">Menü</span>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full Screen Menu -->
+    <div class="fullscreen-menu">
+        <div class="menu-bg"></div>
+        <div class="menu-content">
+            <div class="menu-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Türkiye<span class="accent">Macerası</span></span>
+                    </a>
+                </div>
+                <button class="menu-close">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="menu-body">
+                <div class="menu-links">
+                    <div class="menu-link-column">
+                        <h3>Keşfet</h3>
+                        <ul>
+                            <li><a href="#home" class="menu-link">Ana Sayfa</a></li>
+                            <li><a href="#discover" class="menu-link">Hakkımızda</a></li>
+                            <li><a href="#experiences" class="menu-link">Deneyimler</a></li>
+                            <li><a href="#destinations" class="menu-link">Destinasyonlar</a></li>
+                            <li><a href="#gallery" class="menu-link">Galeri</a></li>
+                            <li><a href="#contact" class="menu-link">İletişim</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-link-column">
+                        <h3>Popüler Turlar</h3>
+                        <ul>
+                            <li><a href="#" class="menu-link">İstanbul Kültür Turu</a></li>
+                            <li><a href="#" class="menu-link">Kapadokya Balon Deneyimi</a></li>
+                            <li><a href="#" class="menu-link">Efes Antik Kenti</a></li>
+                            <li><a href="#" class="menu-link">Pamukkale & Hierapolis</a></li>
+                            <li><a href="#" class="menu-link">Türkiye Gastronomi Turu</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-contact">
+                    <h3>İletişim</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bağdat Caddesi No:285, Kadıköy, İstanbul</p>
+                    <p><i class="fas fa-phone-alt"></i> +90 216 555 67 89</p>
+                    <p><i class="fas fa-envelope"></i> info@turkiyemacerasi.com</p>
+                    <div class="menu-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section section-home active">
+            <div class="split-container">
+                <div class="split-left">
+                    <div class="content-wrapper">
+                        <div class="reveal-text">
+                            <span class="subtitle">Türkiye'nin Eşsiz Güzelliklerini Keşfedin</span>
+                        </div>
+                        <div class="reveal-text">
+                            <h1 class="title">Benzersiz <br><span class="highlight">Deneyimler</span> <br>Sizi Bekliyor</h1>
+                        </div>
+                        <div class="reveal-text">
+                            <p class="description">
+                                Türkiye'nin zengin tarihi, muhteşem doğal güzellikleri ve eşsiz kültürel mirasını keşfetmek için özel olarak tasarlanmış turlarımızla unutulmaz bir seyahat deneyimi yaşayın. Antik şehirlerden muhteşem plajlara, geleneksel lezzetlerden modern şehir yaşamına kadar her şeyi keşfedin.
+                            </p>
+                        </div>
+                        <div class="cta-container">
+                            <a href="#experiences" class="btn-primary">
+                                <span class="btn-text">Deneyimleri Keşfet</span>
+                                <span class="btn-icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                            </a>
+                            <div class="video-trigger">
+                                <div class="video-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <span>Tanıtım Videosu</span>
+                            </div>
+                        </div>
+                        <div class="scroll-indicator">
+                            <div class="mouse">
+                                <div class="wheel"></div>
+                            </div>
+                            <div class="arrow">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-right">
+                    <div class="image-container">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1689062027422-7fe24cc0382a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="İstanbul Boğazı Manzarası">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="floating-element location-tag">
+                            <div class="tag-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="tag-content">
+                                <h4>İstanbul</h4>
+                                <p>Boğaz Manzarası</p>
+                            </div>
+                        </div>
+                        <div class="floating-element info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Türkiye</h4>
+                                <p>İki kıtayı birleştiren ülke</p>
+                                <ul class="info-stats">
+                                    <li><span>81</span> Şehir</li>
+                                    <li><span>8.300+</span> km Sahil</li>
+                                    <li><span>18</span> UNESCO Mirası</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discover Section -->
+        <section id="discover" class="section section-discover">
+            <div class="split-container reverse">
+                <div class="split-left">
+                    <div class="content-wrapper">
+                        <span class="subtitle">Hakkımızda</span>
+                        <h2 class="title">Türkiye'yi <span class="highlight">Keşfetmenin</span> En İyi Yolu</h2>
+                        <p class="description">
+                            2008 yılından beri Türkiye'nin eşsiz güzelliklerini dünyaya tanıtmak için tutkuyla çalışıyoruz. Amacımız, misafirlerimize sadece bir seyahat değil, aynı zamanda unutulmaz anılar ve otantik deneyimler sunmaktır.
+                        </p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="15">0</div>
+                                <div class="stat-label">Yıllık Deneyim</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-label">Özel Tur</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="10000">0</div>
+                                <div class="stat-label">Mutlu Misafir</div>
+                            </div>
+                        </div>
+                        <div class="features-container">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Uzman Rehberler</h3>
+                                    <p>Deneyimli ve profesyonel rehberlerimizle her anın tadını çıkarın</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Özel Deneyimler</h3>
+                                    <p>Yerel kültürü ve yaşamı yakından tanıyacağınız özel aktiviteler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-right">
+                    <div class="image-container">
+                        <div class="image-grid">
+                            <div class="grid-item">
+                                <img src="https://plus.unsplash.com/premium_photo-1690921288020-1556d0868ff5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Türk Misafirperverliği">
+                            </div>
+                            <div class="grid-item">
+                                <img src="https://images.unsplash.com/photo-1611005411307-814ef86b4002?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Türk Çayı">
+                            </div>
+                            <div class="grid-item">
+                                <img src="https://images.unsplash.com/photo-1689062026556-a8472097d366?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Türk Rehber">
+                            </div>
+                            <div class="grid-item">
+                                <img src="https://plus.unsplash.com/premium_photo-1691338312403-e9f7f7984eeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Türk Mutfağı">
+                            </div>
+                        </div>
+                        <div class="floating-element experience-badge">
+                            <div class="badge-content">
+                                <span class="badge-number">15+</span>
+                                <span class="badge-text">Yıllık Deneyim</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiences Section -->
+        <section id="experiences" class="section section-experiences">
+            <div class="section-header">
+                <span class="subtitle">Benzersiz Deneyimler</span>
+                <h2 class="title">Unutulmaz <span class="highlight">Anılar</span> Biriktirin</h2>
+            </div>
+            <div class="experiences-container">
+                <div class="experience-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1737402142071-b8b51f6fcfa7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="İstanbul Kültür Turu">
+                        <div class="card-overlay"></div>
+                        <div class="card-tag">En Popüler</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-duration"><i class="far fa-clock"></i> 3 Gün</span>
+                            <span class="meta-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(120)</span>
+                            </span>
+                        </div>
+                        <h3 class="card-title">İstanbul Kültür Turu</h3>
+                        <p class="card-description">İstanbul'un tarihi yarımadasını keşfedin. Ayasofya, Topkapı Sarayı, Sultanahmet Camii ve daha fazlası.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price">₺1,200</span>
+                                <span class="price-text">/ kişi başı</span>
+                            </div>
+                            <a href="#" class="card-button">
+                                <span>Detaylar</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1705349755733-d22379fb2e80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Kapadokya Balon Turu">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-duration"><i class="far fa-clock"></i> 2 Gün</span>
+                            <span class="meta-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(95)</span>
+                            </span>
+                        </div>
+                        <h3 class="card-title">Kapadokya Balon Turu</h3>
+                        <p class="card-description">Gün doğumunda sıcak hava balonuyla Kapadokya'nın masalsı manzarasını kuşbakışı izleyin.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price">₺3,500</span>
+                                <span class="price-text">/ kişi başı</span>
+                            </div>
+                            <a href="#" class="card-button">
+                                <span>Detaylar</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="card-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1678920502835-4bca839ea2f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Efes Antik Kenti Turu">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-duration"><i class="far fa-clock"></i> 1 Gün</span>
+                            <span class="meta-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(76)</span>
+                            </span>
+                        </div>
+                        <h3 class="card-title">Efes Antik Kenti Turu</h3>
+                        <p class="card-description">Dünyanın en iyi korunmuş antik kentlerinden biri olan Efes'i profesyonel rehber eşliğinde keşfedin.</p>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <span class="price">₺950</span>
+                                <span class="price-text">/ kişi başı</span>
+                            </div>
+                            <a href="#" class="card-button">
+                                <span>Detaylar</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn-outline">
+                    <span class="btn-text">Tüm Deneyimler</span>
+                    <span class="btn-icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="section section-destinations">
+            <div class="split-container">
+                <div class="split-left">
+                    <div class="content-wrapper">
+                        <span class="subtitle">Popüler Destinasyonlar</span>
+                        <h2 class="title">Türkiye'nin <span class="highlight">Büyüleyici</span> Yerleri</h2>
+                        <p class="description">
+                            Türkiye, antik şehirlerden muhteşem plajlara, dağlardan vadilere kadar çeşitli doğal ve tarihi güzelliklere sahiptir. Her köşesi ayrı bir hikaye barındıran bu eşsiz ülkeyi keşfedin.
+                        </p>
+                        <div class="destination-tabs">
+                            <div class="tab-buttons">
+                                <button class="tab-button active" data-tab="istanbul">İstanbul</button>
+                                <button class="tab-button" data-tab="cappadocia">Kapadokya</button>
+                                <button class="tab-button" data-tab="pamukkale">Pamukkale</button>
+                                <button class="tab-button" data-tab="antalya">Antalya</button>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="istanbul">
+                                    <div class="tab-image">
+                                        <img src="https://images.unsplash.com/photo-1720554069178-ef910053c123?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="İstanbul">
+                                    </div>
+                                    <div class="tab-info">
+                                        <h3>İstanbul</h3>
+                                        <p>İki kıtayı birleştiren, tarih ve modernliğin buluştuğu eşsiz şehir. Ayasofya, Topkapı Sarayı, Kapalıçarşı ve daha fazlası sizi bekliyor.</p>
+                                        <div class="tab-meta">
+                                            <span><i class="fas fa-map-marker-alt"></i> Marmara Bölgesi</span>
+                                            <span><i class="fas fa-star"></i> 4.9 (520)</span>
+                                        </div>
+                                        <a href="#" class="tab-link">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="cappadocia">
+                                    <div class="tab-image">
+                                        <img src="https://images.unsplash.com/photo-1715940752199-8ac3fe962140?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Kapadokya">
+                                    </div>
+                                    <div class="tab-info">
+                                        <h3>Kapadokya</h3>
+                                        <p>Peri bacaları ve sıcak hava balonlarıyla masalsı bir deneyim. Yeraltı şehirleri, vadiler ve eşsiz kaya oluşumları sizi büyüleyecek.</p>
+                                        <div class="tab-meta">
+                                            <span><i class="fas fa-map-marker-alt"></i> İç Anadolu Bölgesi</span>
+                                            <span><i class="fas fa-star"></i> 4.8 (480)</span>
+                                        </div>
+                                        <a href="#" class="tab-link">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="pamukkale">
+                                    <div class="tab-image">
+                                        <img src="https://images.unsplash.com/photo-1700757602374-2346184dd008?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Pamukkale">
+                                    </div>
+                                    <div class="tab-info">
+                                        <h3>Pamukkale</h3>
+                                        <p>Beyaz travertenler ve antik Hierapolis kentiyle doğa harikası. Termal sular ve antik kalıntılar arasında unutulmaz bir deneyim.</p>
+                                        <div class="tab-meta">
+                                            <span><i class="fas fa-map-marker-alt"></i> Ege Bölgesi</span>
+                                            <span><i class="fas fa-star"></i> 4.7 (420)</span>
+                                        </div>
+                                        <a href="#" class="tab-link">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="antalya">
+                                    <div class="tab-image">
+                                        <img src="https://images.unsplash.com/photo-1682802690940-6448b186085a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Antalya">
+                                    </div>
+                                    <div class="tab-info">
+                                        <h3>Antalya</h3>
+                                        <p>Turkuaz sahiller ve antik kentleriyle Akdeniz'in incisi. Muhteşem plajlar, antik kentler ve doğal güzellikler sizi bekliyor.</p>
+                                        <div class="tab-meta">
+                                            <span><i class="fas fa-map-marker-alt"></i> Akdeniz Bölgesi</span>
+                                            <span><i class="fas fa-star"></i> 4.8 (450)</span>
+                                        </div>
+                                        <a href="#" class="tab-link">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-right">
+                    <div class="map-container">
+                        <div class="map-wrapper">
+                            <img src="https://images.unsplash.com/photo-1682802564552-d88a651e5be8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Türkiye Haritası">
+                            <div class="map-marker" data-location="istanbul" style="top: 25%; left: 65%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-pulse"></div>
+                                <div class="marker-label">İstanbul</div>
+                            </div>
+                            <div class="map-marker" data-location="cappadocia" style="top: 45%; left: 55%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-pulse"></div>
+                                <div class="marker-label">Kapadokya</div>
+                            </div>
+                            <div class="map-marker" data-location="pamukkale" style="top: 60%; left: 40%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-pulse"></div>
+                                <div class="marker-label">Pamukkale</div>
+                            </div>
+                            <div class="map-marker" data-location="antalya" style="top: 70%; left: 45%;">
+                                <div class="marker-dot"></div>
+                                <div class="marker-pulse"></div>
+                                <div class="marker-label">Antalya</div>
+                            </div>
+                        </div>
+                        <div class="floating-element map-info">
+                            <div class="info-header">
+                                <h4>Türkiye</h4>
+                                <span>Avrupa ve Asya'nın Buluşma Noktası</span>
+                            </div>
+                            <div class="info-body">
+                                <p>Türkiye, 783.562 km² yüzölçümü ile Avrupa ve Asya kıtalarını birleştiren eşsiz bir coğrafi konuma sahiptir.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section section-gallery">
+            <div class="section-header">
+                <span class="subtitle">Görsel Keşif</span>
+                <h2 class="title">Türkiye'nin <span class="highlight">Büyüleyici</span> Manzaraları</h2>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-masonry">
+                    <div class="gallery-item large">
+                        <img src="https://plus.unsplash.com/premium_photo-1678654657249-4fcc2a7e0a96?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="İstanbul Boğazı">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>İstanbul Boğazı</h3>
+                                <p>Avrupa ve Asya'yı birleştiren eşsiz manzara</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1685730040261-52cc5c188497?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Kapadokya Balonları">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>Kapadokya</h3>
+                                <p>Sıcak hava balonları</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1690960119019-ea8638a3cae6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Pamukkale Travertenleri">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>Pamukkale</h3>
+                                <p>Beyaz travertenler</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1586470373195-cf746a7465ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Efes Antik Kenti">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>Efes</h3>
+                                <p>Antik kent kalıntıları</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1661962322472-e0be5fa94a36?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Ölüdeniz">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>Ölüdeniz</h3>
+                                <p>Turkuaz sular ve kumsallar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-arrow prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="gallery-arrow next">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn-outline">
+                    <span class="btn-text">Tüm Fotoğraflar</span>
+                    <span class="btn-icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-contact">
+            <div class="split-container reverse">
+                <div class="split-left">
+                    <div class="content-wrapper">
+                        <span class="subtitle">İletişim</span>
+                        <h2 class="title">Bizimle <span class="highlight">İletişime</span> Geçin</h2>
+                        <p class="description">
+                            Sorularınız veya rezervasyon talepleriniz için bizimle iletişime geçebilirsiniz. Size en kısa sürede dönüş yapacağız.
+                        </p>
+                        <div class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Adınız Soyadınız</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-posta Adresiniz</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Konu</label>
+                                <select id="subject" required>
+                                    <option value="" disabled selected>Seçiniz</option>
+                                    <option value="reservation">Rezervasyon</option>
+                                    <option value="information">Bilgi Talebi</option>
+                                    <option value="feedback">Geri Bildirim</option>
+                                    <option value="other">Diğer</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesajınız</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <span class="btn-text">Gönder</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-right">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-header">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <h3>Adres</h3>
+                            </div>
+                            <div class="info-content">
+                                <p>Bağdat Caddesi No:285, Kadıköy</p>
+                                <p>İstanbul, Türkiye</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-header">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <h3>Telefon</h3>
+                            </div>
+                            <div class="info-content">
+                                <p>+90 216 555 67 89</p>
+                                <p>+90 532 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-header">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h3>E-posta</h3>
+                            </div>
+                            <div class="info-content">
+                                <p>info@turkiyemacerasi.com</p>
+                                <p>rezervasyon@turkiyemacerasi.com</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-header">
+                                <div class="info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h3>Çalışma Saatleri</h3>
+                            </div>
+                            <div class="info-content">
+                                <p>Pazartesi - Cumartesi: 09:00 - 18:00</p>
+                                <p>Pazar: Kapalı</p>
+                            </div>
+                        </div>
+                        <div class="map-embed">
+                            <img src="https://images.unsplash.com/photo-1720048133972-4d7e99e166df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fFQlQzMlQkNya2l5ZSUyMGlzdGFuYnVsfGVufDB8fDB8fHww" alt="Harita">
+                            <div class="map-overlay">
+                                <a href="#" class="map-link">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    <span>Haritada Görüntüle</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">Türkiye<span class="accent">Macerası</span></span>
+                    </a>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h3>Keşfet</h3>
+                        <ul>
+                            <li><a href="#home">Ana Sayfa</a></li>
+                            <li><a href="#discover">Hakkımızda</a></li>
+                            <li><a href="#experiences">Deneyimler</a></li>
+                            <li><a href="#destinations">Destinasyonlar</a></li>
+                            <li><a href="#gallery">Galeri</a></li>
+                            <li><a href="#contact">İletişim</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3>Destinasyonlar</h3>
+                        <ul>
+                            <li><a href="#">İstanbul</a></li>
+                            <li><a href="#">Kapadokya</a></li>
+                            <li><a href="#">Pamukkale</a></li>
+                            <li><a href="#">Antalya</a></li>
+                            <li><a href="#">Efes</a></li>
+                            <li><a href="#">Tüm Destinasyonlar</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3>Yasal</h3>
+                        <ul>
+                            <li><a href="privacy-policy.html">Gizlilik Politikası</a></li>
+                            <li><a href="cookie-policy.html">Çerez Politikası</a></li>
+                            <li><a href="#">Kullanım Koşulları</a></li>
+                            <li><a href="#">İptal ve İade</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Bizi Takip Edin</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Türkiye Macerası. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-container">
+                <img src="/placeholder.svg?height=500&width=800" alt="Video Placeholder">
+                <div class="video-play">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
